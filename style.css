@@ -1,114 +1,199 @@
 /* permet de prendre 80% de la page de centrer le contenu */
-body{
-    margin:0;
-    width: 80%;
-    position: relative;
-    left: 10vw;
-
+body {
+  margin: 0;
+  padding: 0;
+  width: 80%;
+  position: relative;
+  left: 10vw;
 }
 /* affiche l'entête avec un fond gris bordure avec arrondi en bas sur 100% de la largeur de l'affichage */
-header{
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-    position:relative;
-    left: -10vw;
-    width: 100vw;
-    background-color: rgb(226, 226, 226);
-    border: 1px solid rgb(114, 114, 114);
-    border-top: 0;
-    border-radius: 0 0 4px 4px;
-/* Ajuste l'entête width + padding + border et height + padding + border */
-    box-sizing: border-box;
+header {
+  position: relative;
+  left: -10vw;
+  width: 100vw;
+  background-color: rgb(226, 226, 226);
+  border: 1px solid rgb(114, 114, 114);
+  border-top: 0;
+  border-radius: 0 0 4px 4px;
+  /* Ajuste l'entête width + padding + border et height + padding + border */
+  box-sizing: border-box;
 }
-nav{
-    position:relative;
-    left: 10vw;
-    width: 80vw;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-size: 12px;
+nav {
+  display: flex;
+  width: 100vw;
+  height: 100%;
 }
-a{
-    text-decoration: none;
-    color: grey;
+#img {
+  display: flex;
+  align-items: center;
+  padding-left: 2%;
 }
-a:hover{
-    color: rgb(71, 71, 71);
+#nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
-#valid, #text{
-    border: 1px solid rgb(114, 114, 114);
-    border-radius: 4px;
+.nav {
+  margin: 0;
+  height: 4em;
+  display: flex;
+  justify-content: space-between;
 }
-#valid:hover{
-    background-color: grey;
+li {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding-right: 1.5em;
 }
-#text:focus{
-    outline: none;
-    box-shadow: 0 0 2px 1px rgb(39, 146, 218);
+a {
+  text-decoration: none;
+  color: grey;
 }
-#accueil{
-    width: 100%;
-    margin-top: 1em;
+a:hover {
+  color: rgb(71, 71, 71);
 }
-#autremenu{
-    display: flex;
-    justify-content: space-around;
-    margin-top: 2em;
-    padding-bottom: 2em;
-    border-bottom: 1px solid rgb(114, 114, 114);
-    color: grey;
+#valid,
+#text {
+  border: 1px solid rgb(114, 114, 114);
+  border-radius: 4px;
 }
-.menusection{
-    width: 33%;
-    text-align: center;
+#valid:hover {
+  background-color: grey;
 }
-.menutext{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    font-size: 14px;
+#text:focus {
+  outline: none;
+  box-shadow: 0 0 2px 1px rgb(39, 146, 218);
 }
-.button{
-    color: white;
-    background-color: rgb(50, 97, 224);
-    width: max-content;
-    border: 1px solid white;
-    border-radius: 4px;
-    height: 2.7em;
-    font-size: 12px;
+#accueil {
+  width: 100%;
+  margin-top: 1em;
 }
-.button:hover{
-    background-color: rgb(28, 58, 139);
+#autremenu {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2em;
+  padding-bottom: 2em;
+  border-bottom: 1px solid rgb(114, 114, 114);
+  color: grey;
 }
-.droitegauche{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color:rgb(177, 174, 174);
-    text-align: left;
-    padding: 2em 0;
-    border-bottom: 1px solid rgb(114, 114, 114);
+.menusection {
+  width: 33%;
+  text-align: center;
 }
-.droitegauche img{
-    width: 40%;
+.menutext {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: 14px;
 }
-.imgdroite{
-    padding-left: 3em;
+.button {
+  color: white;
+  background-color: rgb(50, 97, 224);
+  width: max-content;
+  border: 1px solid white;
+  border-radius: 4px;
+  height: 2.7em;
+  font-size: 12px;
 }
-.imggauche{
-    padding-right: 3em;
+.button:hover {
+  background-color: rgb(28, 58, 139);
 }
-footer{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.droitegauche {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(177, 174, 174);
+  text-align: left;
+  padding: 2em 0;
+  border-bottom: 1px solid rgb(114, 114, 114);
 }
-#back:hover{
-    color: rgb(28, 58, 139);
-    text-decoration: underline;
+.droitegauche__titre {
+  font-size: 2.5em;
+}
+.droitegauche__titre span {
+  color: grey;
+}
+.droitegauche img {
+  width: 40%;
+}
+.imgdroite {
+  padding-left: 3em;
+}
+.imggauche {
+  padding-right: 3em;
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#back:hover {
+  color: rgb(28, 58, 139);
+  text-decoration: underline;
 }
 /* défilement vers le haut en douceur */
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
+}
+/* preparation du responsive à partir de 576px */
+@media only screen and (max-width: 576px) {
+  body {
+    width: 100%;
+    position: static;
+  }
+  header {
+    position: static;
+  }
+  nav {
+    display: block;
+  }
+  #img {
+    display: block;
+    text-align: center;
+  }
+  #nav {
+    display: block;
+  }
+  .nav {
+    display: block;
+    height: auto;
+    padding: 0;
+  }
+  .nav li {
+    padding: 0;
+    justify-content: center;
+    height: 2em;
+    border-top: 1px solid rgb(114, 114, 114);
+  }
+  .nav li:hover {
+    background-color: rgb(114, 114, 114);
+  }
+  .nav a:hover {
+    color: white;
+  }
+  #autremenu {
+    display: block;
+    padding: 0;
+    border: none;
+  }
+  .menusection {
+    width: 100%;
+    padding-bottom: 2em;
+    border-bottom: 1px solid rgb(114, 114, 114);
+  }
+  .droitegauche {
+    flex-direction: column;
+    text-align: center;
+    background-color: rgb(240, 227, 205);
+  }
+  .imggauche {
+    order: 1;
+  }
+  .droitegauche__titre {
+    font-size: 1.3em;
+  }
+  .imgdroite,
+  .imggauche {
+    padding: 0;
+  }
 }
