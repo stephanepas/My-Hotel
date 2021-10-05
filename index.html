@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+<!-- Ancre pour le back to the top -->
+        <a id="TOP"></a>
+<!-- Menu navigation -->
+        <nav>
+            <img src="./assets/images/logo.png" alt="" style="height: 25px;">
+            <a href="#">STAY WITH US</a>
+            <a href="#">RESTAURANTS</a>
+            <a href="#">SPA FACILITIES</a>
+            <a href="#">WEDDINGS</a>
+            <form action="#">
+                <input type="text" id="text" name="text" placeholder="Saisir votre recherche !">
+                <input type="submit" id="valid" name="rechercher" value="Rechercher">
+            </form>
+<!-- icone téléphone + contact us -->
+            <a href="#">
+                <i class="fa fa-phone"></i>
+                CONTACT US</a>
+            <a href="#">DISCOVER</a>
+        </nav>
+    </header>
+    <main>
+        <img id="accueil" src="./assets/images/Hall.jpg" alt="">
+<!-- menu sous la grosse image -->
+        <section id="autremenu">
+            <div class="menusection">
+                <h1>Never far away</h1>
+                <p class="menutext">With over 150 locations worlwide, your never far away from us.</p>
+                <button class="button">Locations <i class="fa fa-angle-double-right"></i></button>
+            </div>
+            <div class="menusection">
+                <h1>Frequent visitor?</h1>
+                <p class="menutext">Join the MyHotel club for fantastic savings and loyalty rewards.</p>
+                <button class="button">Join our club <i class="fa fa-angle-double-right"></i></button>
+            </div>
+            <div class="menusection">
+                <h1>Rooms to suit you</h1>
+                <p class="menutext">Packages are available to suit any taste and budget. Call our friendly team to discuss</p>
+                <button class="button">View details <i class="fa fa-angle-double-right"></i></button>
+            </div>
+        </section>
+<!-- Les 3 autres parties avec les images -->
+        <div class="droitegauche">
+            <div>
+                <!-- Intégration d'une taille de police spécifique et couleur avec "style" -->
+                <p style="font-size: 2.5em;"><span style="color: grey">Wedding packages.</span> Tailor made to suit you.</p>
+                <p>Let us take care of your special day in our fully licenced wedding venue.</p>
+            </div>
+            <img class="imgdroite" src="./assets/images/piscine.jpg" alt="">
+        </div>
+        <div class="droitegauche">
+            <img class="imggauche" src="./assets/images/aston-martin-james-bond.jpg" alt="">
+            <div>
+                <p style="font-size: 2.5em;"><span style="color: grey">My name is Bond.</span> James Bond code 007.</p>
+                <p>Choose from our 3 famous restaurants. Each with it's own theme, whichever you choose you will not be disappointed.</p>
+            </div>
+        </div>
+        <div class="droitegauche">
+            <div>
+                <p style="font-size: 2.5em;"><span style="color: grey">Discover our spa facilities.</span> You will never want to leave.</p>
+                <p>Make the most of your stay with our fully equipped spa facilities.</p>
+            </div>
+            <img class="imgdroite" src="./assets/images/piscine.jpg" alt="">
+        </div>
+    </main>
+    <footer>
+        <p>
+            <i class="fa fa-copyright"></i> 2014 MyHotel - 
+            <a href="#">Privacy</a> - 
+            <a href="#">Terms</a> - 
+        </p>
+<!-- hyperlien back to the top avec l'ancre #TOP -->
+        <a id="back" href="#TOP">Back to the top</a>
+    </footer>
+</body>
+</html>

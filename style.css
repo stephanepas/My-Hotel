@@ -1,0 +1,114 @@
+/* permet de prendre 80% de la page de centrer le contenu */
+body{
+    margin:0;
+    width: 80%;
+    position: relative;
+    left: 10vw;
+
+}
+/* affiche l'entête avec un fond gris bordure avec arrondi en bas sur 100% de la largeur de l'affichage */
+header{
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    position:relative;
+    left: -10vw;
+    width: 100vw;
+    background-color: rgb(226, 226, 226);
+    border: 1px solid rgb(114, 114, 114);
+    border-top: 0;
+    border-radius: 0 0 4px 4px;
+/* Ajuste l'entête width + padding + border et height + padding + border */
+    box-sizing: border-box;
+}
+nav{
+    position:relative;
+    left: 10vw;
+    width: 80vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 12px;
+}
+a{
+    text-decoration: none;
+    color: grey;
+}
+a:hover{
+    color: rgb(71, 71, 71);
+}
+#valid, #text{
+    border: 1px solid rgb(114, 114, 114);
+    border-radius: 4px;
+}
+#valid:hover{
+    background-color: grey;
+}
+#text:focus{
+    outline: none;
+    box-shadow: 0 0 2px 1px rgb(39, 146, 218);
+}
+#accueil{
+    width: 100%;
+    margin-top: 1em;
+}
+#autremenu{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2em;
+    padding-bottom: 2em;
+    border-bottom: 1px solid rgb(114, 114, 114);
+    color: grey;
+}
+.menusection{
+    width: 33%;
+    text-align: center;
+}
+.menutext{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 14px;
+}
+.button{
+    color: white;
+    background-color: rgb(50, 97, 224);
+    width: max-content;
+    border: 1px solid white;
+    border-radius: 4px;
+    height: 2.7em;
+    font-size: 12px;
+}
+.button:hover{
+    background-color: rgb(28, 58, 139);
+}
+.droitegauche{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:rgb(177, 174, 174);
+    text-align: left;
+    padding: 2em 0;
+    border-bottom: 1px solid rgb(114, 114, 114);
+}
+.droitegauche img{
+    width: 40%;
+}
+.imgdroite{
+    padding-left: 3em;
+}
+.imggauche{
+    padding-right: 3em;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#back:hover{
+    color: rgb(28, 58, 139);
+    text-decoration: underline;
+}
+/* défilement vers le haut en douceur */
+html{
+    scroll-behavior: smooth;
+}
